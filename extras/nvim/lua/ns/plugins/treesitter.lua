@@ -1,0 +1,52 @@
+return {
+  {
+    "windwp/nvim-ts-autotag",
+    event = "InsertEnter",
+    opts = {},
+  },
+
+  {
+    "nvim-treesitter/nvim-treesitter",
+    event = "VeryLazy",
+    build = ":TSUpdate",
+    main = "nvim-treesitter.configs",
+    opts = {
+      ensure_installed = {
+        "query",
+        "vimdoc",
+        "vim",
+        "lua",
+        "bash",
+        "c",
+        "regex",
+        "nix",
+        "markdown",
+        "markdown_inline",
+        "json",
+        "html",
+        "css",
+        "styled",
+        "javascript",
+        "typescript",
+        "tsx",
+        "prisma",
+        "vue",
+        "astro",
+        "http",
+        "go",
+        "gomod",
+        "gosum",
+      },
+      highlight = { enable = true },
+      incremental_selection = {
+        enable = true,
+        keymaps = {
+          init_selection = "<CR>",
+          node_incremental = "<CR>",
+          scope_incremental = false,
+          node_decremental = "<BS>",
+        },
+      },
+    },
+  },
+}

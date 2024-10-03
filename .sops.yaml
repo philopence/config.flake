@@ -1,0 +1,9 @@
+keys:
+  - &user_philopence age1h6yhjrs62jhf82qqrwxhahlcxxaj853spjw4ldws2xszgwcvscysdfpj25
+  - &host_nixos age17t3p4h9yq2vgsd7mgeav22h8m0anj7ym8xvhlsre4e0shuufs39q02jjpn
+creation_rules:
+  - path_regex: extras/secrets.(yaml|json|env|ini)$
+    key_groups:
+      - age:
+        - *user_philopence
+        - *host_nixos

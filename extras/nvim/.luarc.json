@@ -1,0 +1,20 @@
+{
+  "$schema": "https://raw.githubusercontent.com/sumneko/vscode-lua/master/setting/schema.json",
+  "runtime": {
+    "version": "LuaJIT"
+  },
+  "completion": {
+    "callSnippet": "Replace"
+  },
+  "hint": {
+    "enable": true,
+    "arrayIndex": "Disable"
+  },
+  "workspace": {
+    "checkThirdParty": false,
+    "library": [
+      "$VIMRUNTIME/lua",
+      "$XDG_DATA_HOME/nvim/lazy/luvit-meta/library"
+    ]
+  }
+}

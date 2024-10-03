@@ -1,0 +1,12 @@
+{
+  "frontmatter": {
+    "prefix": ["fm"],
+    "body": [
+      "---",
+      "author: philopence",
+      "title: ${1}",
+      "pubDate: ${CURRENT_DAY_NAME_SHORT}, ${CURRENT_MONTH_NAME_SHORT} ${CURRENT_DATE}, ${CURRENT_YEAR}",
+      "---"
+    ]
+  }
+}
