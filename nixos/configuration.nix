@@ -84,10 +84,6 @@
 
   # NOTE wpa_passphrase SSID PASSPHRASE
   # networking.wireless.enable = true;
-  # networking.wireless.networks."ERROR" = {
-  #   hidden = true;
-  #   pskRaw = "43c47504b3edd1285a1816c3da653095ee015b9cf510105988c8b33aefb3af94";
-  # };
   # networking.wireless.networks."HOTSPOT" = {
   #   pskRaw = "d65d20e7bc1450cbe444865a5e2534ec6812c516c93ecce351b59343d5c503f9";
   # };
@@ -102,9 +98,9 @@
     enable = true;
     settings = {
       INTERNET_IFACE = "enp3s0";
+      WIFI_IFACE = "wlp2s0";
       PASSPHRASE = "0123456789";
       SSID = "NixOS Hotspot";
-      WIFI_IFACE = "wlp2s0";
       # PERSISTENT_DAEMON = true;
     };
   };

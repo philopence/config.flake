@@ -3,4 +3,5 @@
 pkgs: {
   # example = pkgs.callPackage ./example { };
   vtsls = pkgs.callPackage ./vtsls {};
+  kd = pkgs.callPackage ./kd.nix {};
 }

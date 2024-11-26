@@ -49,8 +49,8 @@ in {
             type = "tun";
             tag = "tun-in";
             interface_name = "sing-box";
-            ## TODO v1.10.0 "address": [ "172.18.0.1/30" ]
-            inet4_address = "172.19.0.1/30";
+            ## TODO v1.10.0 
+            address = [ "172.18.0.1/30" ];
             mtu = 1480;
             gso = true;
             auto_route = true;
@@ -70,7 +70,7 @@ in {
               "hk-out"
               # "bak-out"
             ];
-            default = "jp-out";
+            default = "us-out";
           }
           {
             type = "shadowsocks";

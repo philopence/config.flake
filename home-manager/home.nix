@@ -91,6 +91,15 @@
 
   services.udiskie.enable = true;
 
+  programs.vscode = {
+    enable = true;
+    package = pkgs.vscodium;
+  };
+
+  programs.zathura = {
+    enable = true;
+  };
+
   programs.fish = {
     enable = true;
     functions = {
@@ -136,7 +145,7 @@
   programs.eza = {
     enable = true;
     git = true;
-    icons = true;
+    icons = "auto";
   };
 
   programs.btop = {

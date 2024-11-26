@@ -5,6 +5,7 @@ local formatters_by_ft = vim.tbl_deep_extend(
   {
     lua = { "stylua" },
     go = { "goimports", "gofumpt" },
+    c = { "clang-format" },
   },
   vim
     .iter({

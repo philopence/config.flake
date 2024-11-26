@@ -7,11 +7,6 @@ return {
     "catppuccin/nvim",
     name = "catppuccin",
     priority = 1000,
-    opts = {
-      color_overrides = {
-        mocha = {},
-      },
-    },
   },
   {
     "rose-pine/neovim",
@@ -31,10 +26,16 @@ return {
     },
   },
   {
+    "savq/melange-nvim",
+    priority = 1000,
+  },
+  {
     "bluz71/vim-moonfly-colors",
     name = "moonfly",
     priority = 1000,
     config = function()
+      vim.g.moonflyItalics = false
+
       local custom_highlight = vim.api.nvim_create_augroup("CustomHighlight", {})
       vim.api.nvim_create_autocmd("ColorScheme", {
         pattern = "moonfly",
@@ -45,6 +46,15 @@ return {
           vim.api.nvim_set_hl(0, "CursorLine", { link = "NONE" })
           vim.api.nvim_set_hl(0, "DocBorder", { fg = "#2e2e2e", bg = "#080808" })
           vim.api.nvim_set_hl(0, "CmpBorder", { fg = "#2e2e2e", bg = "#080808" })
+          vim.api.nvim_set_hl(0, "MiniStatuslineModeNormal", { fg = "#c6c6c6", bg = "#323437" })
+          vim.api.nvim_set_hl(0, "MiniStatuslineModeCommand", { fg = "#c6c6c6", bg = "#323437" })
+          vim.api.nvim_set_hl(0, "MiniStatuslineModeInsert", { fg = "#c6c6c6", bg = "#323437" })
+          vim.api.nvim_set_hl(0, "MiniStatuslineModeVisual", { fg = "#c6c6c6", bg = "#323437" })
+          vim.api.nvim_set_hl(0, "MiniStatuslineModeReplace", { fg = "#c6c6c6", bg = "#323437" })
+          vim.api.nvim_set_hl(0, "MiniStatuslineModeOther", { fg = "#c6c6c6", bg = "#323437" })
+          vim.api.nvim_set_hl(0, "MiniStatuslineDevinfo", { fg = "#c6c6c6", bg = "#2e2e2e" })
+          vim.api.nvim_set_hl(0, "MiniStatuslineFileinfo", { fg = "#c6c6c6", bg = "#2e2e2e" })
+          vim.api.nvim_set_hl(0, "MiniStatuslineFilename", { fg = "#c6c6c6", bg = "#2e2e2e" })
           -----------------------------
           -- borderless
           -- vim.api.nvim_set_hl(0, "DocNormal", { bg = "#121212" })

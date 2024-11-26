@@ -47,28 +47,31 @@ in {
         enable_audio_bell = "no";
         enabled_layouts = "splits,stack";
         # v0.36.3
-        transparent_background_colors = "#2e2e2e@0.67 #323437@0.67 #626262@0.67";
-        background_opacity = "0.93";
+        transparent_background_colors = "#1c1c1c@0.87 #2e2e2e@0.87 #323437@0.87 #626262@0.87 #80a0ff@0.87";
+        background_opacity = "0.87";
         window_padding_width = 2;
         window_border_width = 1;
         cursor_stop_blinking_after = 0;
         font_size = "10.0";
-        "modify_font cell_height" = "110%";
+        "modify_font cell_height" = "105%";
         # "modify_font cell_width" = "1";
 
         # font_family = "family='Cascadia Code' features='+calt +ss01 +ss02 +ss03 +ss19 +ss20'";
-        # font_family = "family='JetBrains Mono'";
+        font_family = "family='JetBrains Mono'";
         # font_family = "family='Iosevka Extended'";
         # font_family = "family=CommitMono";
         # font_family = "family='Hermit'";
         # font_family = "family='Departure Mono'";
-        # bold_font = "auto";
-        # italic_font = "auto";
-        # bold_italic_font = "auto";
-        font_family = "family=Iosevka style=Extended";
-        bold_font = "family=Iosevka style='Bold Extended'";
-        italic_font = "family=Iosevka style='Extended Italic'";
-        bold_italic_font = "family=Iosevka style='Bold Extended Italic'";
+        # font_family = "family='SF Mono'";
+        # font_family = "family=Iosevka";
+        # font_family = "family=Iosevka style=Extended";
+        bold_font = "auto";
+        italic_font = "auto";
+        bold_italic_font = "auto";
+        # font_family = "family=Iosevka style=Extended";
+        # bold_font = "family=Iosevka style='Bold Extended'";
+        # italic_font = "family=Iosevka style='Extended Italic'";
+        # bold_italic_font = "family=Iosevka style='Bold Extended Italic'";
 
         foreground = config.palette.foreground;
         background = config.palette.background;
@@ -81,6 +84,7 @@ in {
         active_tab_foreground = config.palette.background;
         active_tab_background = config.palette.color4;
         active_tab_font_style = "bold";
+        inactive_tab_font_style = "normal";
         inactive_tab_foreground = config.palette.color8;
         inactive_tab_background = config.palette.background;
         color0 = config.palette.color0;

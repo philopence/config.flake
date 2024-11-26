@@ -34,8 +34,10 @@ local kinds = {
 
 return {
   -- "hrsh7th/nvim-cmp",
-  "yioneko/nvim-cmp",
-  branch = "perf",
+  -- "yioneko/nvim-cmp",
+  -- branch = "perf",
+  "iguanacucumber/magazine.nvim",
+  name = "nvim-cmp", -- Otherwise highlighting gets messed up
   enabled = true,
   dependencies = {
     "hrsh7th/cmp-nvim-lsp",
@@ -79,7 +81,7 @@ return {
           end
 
           -- vim_item.menu = vim_item.kind
-          vim_item.kind = string.format("%s %s", kinds[vim_item.kind] or vim_item.kind, vim_item.kind)
+          -- vim_item.kind = string.format("%s %s", kinds[vim_item.kind] or vim_item.kind, vim_item.kind)
 
           return vim_item
         end,

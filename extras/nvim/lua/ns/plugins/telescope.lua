@@ -53,8 +53,8 @@ return {
             height = 0.75,
           },
           vertical = {
-            height = 0.75,
-            width = 0.55,
+            height = 0.93,
+            width = 80 / vim.o.columns,
             preview_height = 0.50,
             preview_cutoff = 20,
             prompt_position = "top",

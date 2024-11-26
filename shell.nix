@@ -17,11 +17,14 @@ pkgs: {
     nativeBuildInputs = with pkgs; [(rWrapper.override {packages = with rPackages; [ggplot2];})];
   };
   py = pkgs.mkShell {
-    NIX_CONFIG = "experimental-features = nix-command flakes";
-    packages = [
-      (pkgs.python3.withPackages (python-pkgs: [
-        python-pkgs.scikit-learn
-      ]))
+    buildInputs = with pkgs; [
+      python312
+      python312Packages.numpy
+      python312Packages.matplotlib
+      python312Packages.shap
+      python312Packages.xgboost
+      python312Packages.scikit-learn
+      python312Packages.seaborn
     ];
   };
   ## https://github.com/prisma/prisma/pull/23672

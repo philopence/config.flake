@@ -2,15 +2,21 @@
 
 ![desktop.png](https://raw.githubusercontent.com/philopence/nix-configuration/main/extras/desktop.png)
 
+原文：Furthermore, traversing the tree in reverse-level order is not as easy with pointers.
+中文版：不仅如此，以相反的层序遍历树也不像用指针那么容易。
+CHATGPT：此外，使用指针进行反向层次遍历并不容易。
+
 ## NOTES
 
+- [Project Status](https://github.com/Misterio77/nix-starter-configs/issues/86)
 - [perf: improve for source providing huge list of items](https://github.com/hrsh7th/nvim-cmp/pull/1980)
 - [bug: picom 'animations' syntax error](https://github.com/nix-community/home-manager/issues/5744)
 - https://github.com/nix-community/disko
-- https://github.com/YaLTeR/niri
+- [A scrollable-tiling Wayland compositor](https://github.com/YaLTeR/niri)
 - quickfix workflow
 - neogit vs lazygit
 - [Interactive database client for neovim](https://github.com/kndndrj/nvim-dbee)
+- [Performant, batteries-included completion plugin for Neovim](https://github.com/Saghen/blink.cmp)
 
 ## Installation Guide
 
