@@ -70,7 +70,7 @@ in {
               "hk-out"
               # "bak-out"
             ];
-            default = "us-out";
+            default = "hk-out";
           }
           {
             type = "shadowsocks";

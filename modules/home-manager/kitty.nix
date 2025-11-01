@@ -44,6 +44,7 @@ in {
         "ctrl+shift+r" = "set_tab_title";
       };
       settings = {
+        cursor_trail = 3;
         enable_audio_bell = "no";
         enabled_layouts = "splits,stack";
         # v0.36.3

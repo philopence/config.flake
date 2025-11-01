@@ -83,10 +83,11 @@
   networking.hostName = "nixos";
 
   # NOTE wpa_passphrase SSID PASSPHRASE
-  # networking.wireless.enable = true;
-  # networking.wireless.networks."HOTSPOT" = {
-  #   pskRaw = "d65d20e7bc1450cbe444865a5e2534ec6812c516c93ecce351b59343d5c503f9";
-  # };
+  networking.wireless.enable = true;
+  networking.wireless.networks."CMCC-nUgj" = {
+    # pskRaw = "65817bfc67e58a05af60e6904800adea398ddb97a38922b16e223abcdb0c3f4f";
+    psk = "0123456789";
+  };
 
   # TODO work with sing-box
   networking.firewall.enable = false;
@@ -94,16 +95,16 @@
   environment.localBinInPath = true;
 
   ## Can't work with wireless module
-  services.create_ap = {
-    enable = true;
-    settings = {
-      INTERNET_IFACE = "enp3s0";
-      WIFI_IFACE = "wlp2s0";
-      PASSPHRASE = "0123456789";
-      SSID = "NixOS Hotspot";
-      # PERSISTENT_DAEMON = true;
-    };
-  };
+  # services.create_ap = {
+  #   enable = true;
+  #   settings = {
+  #     INTERNET_IFACE = "enp3s0";
+  #     WIFI_IFACE = "wlp2s0";
+  #     PASSPHRASE = "0123456789";
+  #     SSID = "NixOS Hotspot";
+  #     # PERSISTENT_DAEMON = true;
+  #   };
+  # };
 
   services.openssh = {
     enable = true;

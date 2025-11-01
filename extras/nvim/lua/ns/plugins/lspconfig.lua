@@ -94,7 +94,7 @@ return {
 
     for _, server in ipairs({
       "lua_ls",
-      "clangd",
+      -- "clangd",
       "html",
       "cssls",
       -- "emmet_language_server",
